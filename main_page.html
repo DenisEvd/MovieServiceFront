@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Movie service</title>
+    <link rel="stylesheet" href="main_page.css">
 </head>
 <body>
     <header>
@@ -17,32 +18,33 @@
                 <li>Movies of my childhood</li>
             </ul>
         </nav>
-        <section>
+        <section class="buttons_panel">
             <h2>Buttons panel</h2>
-            <button>Add new</button>
-            <button>Random</button>
-            <button>Recommend</button>
+            <button class="action_button">Add new</button>
+            <button class="action_button">Random</button>
+            <button class="action_button">Recommend</button>
         </section>
         <br>
         <section>
             <h2>Movie list</h2>
-            <pre>
-            M     M  OOOOO  V     V  III  EEEEE  SSSSS
-            MM   MM O     O  V   V    I   E      S
-            M M M M O     O   V V     I   EEEEE  SSSSS
-            M  M  M O     O    V      I   E          S
-            M     M  OOOOO     V     III  EEEEE  SSSSS
-            </pre>
-            <article>
-                The Prestige
-                Rating: 8.5/10
-                2006
-            </article>
-            <article>
-                Django Unchained
-                Rating: 8.2/10
-                2012
-            </article>
+            <div class="movie_list">
+                <div class="movie">
+                    <img src="content/movie_posters/prestige.png" alt="The Prestige poster">
+                    <h4>The Prestige</h4>
+                    <article>
+                    Rating: 8.5/10
+                    2006
+                    </article>
+                </div>
+                <div class="movie">
+                    <img src="content/movie_posters/bastards.png" alt="Django Unchained poster">
+                    <h4>Inglorious Bastards</h4>
+                    <article>
+                        Rating: 8.2/10
+                        2012
+                    </article>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
