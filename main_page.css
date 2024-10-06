@@ -12,6 +12,10 @@ header {
 }
 
 main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
     background-color: #4186D3;
     padding: 20px;
 }
@@ -34,10 +38,15 @@ li {
     padding: 7px;
     background-color: #04356C;
     text-align: center;
+
+    display: flex;
+    gap: 10px;
 }
 
 .action_button {
-    padding: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+
     margin-right: 15px;
     border-radius: 10%;
 }
@@ -47,6 +56,8 @@ li {
     flex-wrap: wrap;
     justify-content: start;
     grid-gap: 5px;
+
+    flex-grow: 1;
 }
 
 .movie {
