@@ -2,21 +2,27 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Movie service</title>
+    <title>Movie Service</title>
     <link rel="stylesheet" href="main_page.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 <header>
     <h1>Movie Service</h1>
 </header>
 <main>
-    <nav class="movies_lists_part">
-        <h2>Lists</h2>
-        <ul>
-            <li>Movies to watch in the future</li>
-            <li>Favorite movies</li>
-            <li>Movies of my childhood</li>
-        </ul>
+    <nav class="sidebar_section">
+        <div class="login_container">
+            <button class="action_button login_button" onclick="window.location.href='login.html'">Login</button>
+        </div>
+        <div class="movies_lists_container">
+            <h2>Lists</h2>
+            <ul>
+                <li>Movies to watch in the future</li>
+                <li>Favorite movies</li>
+                <li>Movies of my childhood</li>
+            </ul>
+        </div>
     </nav>
     <div class="work_part">
         <section class="buttons_panel">

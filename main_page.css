@@ -47,53 +47,58 @@ footer {
     color: #F3FD00;
 }
 
-.contact_link {
-    color: #F3FD00;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #1F6B75;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.contact_link:hover {
-    background-color: #36BBCE;
-    color: #FFFFFF;
-}
-
 h1, h2 {
     color: #015965;
     text-align: center;
 }
 
-li {
-    margin: 10px;
-    color: #555555;
-}
-
-.movies_lists_part {
+.login_container {
+    background-color: #1F6B75;
     flex-basis: 15%;
     min-width: 150px;
-    background-color: #1F6B75;
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
-.movies_lists_part h2 {
+.login_button {
+    background-color: #36BBCE;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.login_button:hover {
+    background-color: #5FC0CE;
+}
+
+.movies_lists_container {
+    background-color: #1F6B75;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.movies_lists_container h2 {
     color: #F3FD00;
     text-align: center;
     margin-bottom: 15px;
 }
 
-.movies_lists_part ul {
+.movies_lists_container ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.movies_lists_part li {
+.movies_lists_container li {
     margin: 15px 0;
     color: #FFFFFF;
     font-size: 16px;
@@ -101,6 +106,10 @@ li {
     padding: 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
+}
+
+.movies_lists_container li:hover {
+    background-color: #36BBCE;
 }
 
 .work_part {
@@ -183,7 +192,7 @@ li {
         flex-direction: column;
     }
 
-    .movies_lists_part {
+    .sidebar_section {
         flex-basis: 100%;
         margin-bottom: 20px;
     }
