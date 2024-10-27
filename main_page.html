@@ -3,67 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Movie Service</title>
-    <link rel="stylesheet" href="main_page.css">
+    <link rel="stylesheet" href="style.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
-<header>
-    <h1>Movie Service</h1>
+<header class="header">
+    <h1 class="header__title">Movie Service</h1>
 </header>
-<main>
-    <nav class="sidebar_section">
-        <div class="login_container">
-            <button class="action_button login_button" onclick="window.location.href='login.html'">Login</button>
+<main class="main">
+    <nav class="sidebar">
+        <div class="login-container">
+            <button class="button button--login" onclick="window.location.href='login.html'">Login</button>
         </div>
-        <div class="movies_lists_container">
-            <h2>Lists</h2>
-            <ul>
-                <li>Movies to watch in the future</li>
-                <li>Favorite movies</li>
-                <li>Movies of my childhood</li>
+        <div class="movies-lists">
+            <h2 class="movies-lists__title">Lists</h2>
+            <ul class="movies-lists__list">
+                <li class="movies-lists__item">Movies to watch in the future</li>
+                <li class="movies-lists__item">Favorite movies</li>
+                <li class="movies-lists__item">Movies of my childhood</li>
             </ul>
         </div>
     </nav>
-    <div class="work_part">
-        <section class="buttons_panel">
-            <button class="action_button">Add new</button>
-            <button class="action_button">Random</button>
-            <button class="action_button">Recommend</button>
+    <div class="work-area">
+        <section class="buttons-panel">
+            <button class="button button--add">Add new</button>
+            <button class="button button--random">Random</button>
+            <button class="button button--recommend">Recommend</button>
         </section>
         <section>
-            <h2>Movie list</h2>
-            <div class="movie_list">
+            <div class="movie-list">
                 <div class="movie">
-                    <img src="content/movie_posters/prestige.png" alt="The Prestige poster">
-                    <h4>The Prestige</h4>
-                    <article>
+                    <img src="content/movie_posters/prestige.png" alt="The Prestige poster" class="movie__image">
+                    <h4 class="movie__title">The Prestige</h4>
+                    <article class="movie__info">
                         Rating: 8.5/10
                         <br>
                         2006
                     </article>
                 </div>
                 <div class="movie">
-                    <img src="content/movie_posters/bastards.png" alt="Inglorious Bastards poster">
-                    <h4>Inglorious Bastards</h4>
-                    <article>
+                    <img src="content/movie_posters/bastards.png" alt="Inglorious Bastards poster" class="movie__image">
+                    <h4 class="movie__title">Inglorious Bastards</h4>
+                    <article class="movie__info">
                         Rating: 8.2/10
                         <br>
                         2012
                     </article>
                 </div>
                 <div class="movie">
-                    <img src="content/movie_posters/lalalend.png" alt="LA LA LAND poster">
-                    <h4>La la land</h4>
-                    <article>
+                    <img src="content/movie_posters/lalalend.png" alt="LA LA LAND poster" class="movie__image">
+                    <h4 class="movie__title">La la land</h4>
+                    <article class="movie__info">
                         Rating: 8.0/10
                         <br>
                         2016
                     </article>
                 </div>
                 <div class="movie">
-                    <img src="content/movie_posters/greenmile.png" alt="The Green Mile poster">
-                    <h4>The Green Mile</h4>
-                    <article>
+                    <img src="content/movie_posters/greenmile.png" alt="The Green Mile poster" class="movie__image">
+                    <h4 class="movie__title">The Green Mile</h4>
+                    <article class="movie__info">
                         Rating: 9.1/10
                         <br>
                         1999
@@ -73,9 +72,9 @@
         </section>
     </div>
 </main>
-<footer>
-    <h2>Contacts</h2>
-    <a href="http://test_link">Telegram chat for discussions</a>
+<footer class="footer">
+    <h2 class="footer__title">Contacts</h2>
+    <a href="http://test_link" class="footer__link">Telegram chat for discussions</a>
 </footer>
 </body>
 </html>

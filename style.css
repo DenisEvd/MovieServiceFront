@@ -1,0 +1,257 @@
+html {
+    background-color: #F0F4F8;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+.header {
+    background-color: #03899C;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.header__title {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #03899C;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+.movies-lists {
+    background-color: #1F6B75;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.movies-lists__title {
+    color: #F3FD00;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.movies-lists__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.movies-lists__item {
+    margin: 15px 0;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.movies-lists__item:hover {
+    background-color: #36BBCE;
+}
+
+.login-container {
+    background-color: #1F6B75;
+    flex-basis: 15%;
+    min-width: 150px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.button {
+    background-color: #36BBCE;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #5FC0CE;
+}
+
+.button--add,
+.button--random,
+.button--recommend {
+    flex: 1;
+    margin: 0 5px;
+}
+
+.button--add:hover,
+.button--random:hover,
+.button--recommend:hover {
+    background-color: #5FC0CE;
+}
+
+.work-area {
+    flex-grow: 1;
+    margin-left: 30px;
+}
+
+.buttons-panel {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #015965;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.work-area__title {
+    color: #015965;
+    text-align: center;
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+}
+
+.movie {
+    width: 100%;
+    max-width: 150px;
+    padding: 10px;
+    border-radius: 10%;
+    color: #F3FD00;
+    background-color: #1F6B75;
+    justify-content: center;
+}
+
+.movie__image {
+    width: 100%;
+    height: auto;
+    border-radius: 7%;
+}
+
+.movie__title {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.movie__info {
+    font-size: 14px;
+    margin: 3px;
+    text-align: center;
+}
+
+.login-form {
+    background-color: #1F6B75;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+.login-form__title {
+    color: #F3FD00;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-form__group {
+    margin-bottom: 15px;
+}
+
+.login-form__label {
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form__input {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #333;
+    font-size: 16px;
+}
+
+.login-form__register-link {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.login-form__link {
+    color: #F3FD00;
+    text-decoration: underline;
+}
+
+.login-form__link:hover {
+    color: #36BBCE;
+}
+
+.action_button {
+    padding: 10px 20px;
+    background-color: #36BBCE;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+}
+
+.action_button:hover {
+    background-color: #5FC0CE;
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .work-area {
+        margin-left: 0;
+    }
+
+    .buttons-panel {
+        margin-bottom: 20px;
+    }
+
+    .movie {
+        max-width: 100%;
+    }
+}

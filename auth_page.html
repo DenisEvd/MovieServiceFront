@@ -3,33 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>Login - Movie Service</title>
-  <link rel="stylesheet" href="main_page.css">
+  <link rel="stylesheet" href="style.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
-<header>
-  <h1>Movie Service</h1>
+<header class="header">
+  <h1 class="header__title">Movie Service</h1>
 </header>
 <main>
-  <section class="login_form_section">
-    <h2>Login</h2>
-    <form class="login_form">
-      <div class="form_group">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+  <section class="login-form">
+    <h2 class="login-form__title">Login</h2>
+    <form class="login-form__form">
+      <div class="login-form__group">
+        <label for="username" class="login-form__label">Username</label>
+        <input type="text" id="username" name="username" class="login-form__input" placeholder="Enter your username" required>
       </div>
-      <div class="form_group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <div class="login-form__group">
+        <label for="password" class="login-form__label">Password</label>
+        <input type="password" id="password" name="password" class="login-form__input" placeholder="Enter your password" required>
       </div>
-      <button type="submit" class="action_button">Login</button>
+      <button class="action_button">Login</button>
     </form>
-    <p class="register_link">Don't have an account? <a href="#">Register here</a></p>
+    <p class="login-form__register-link">Don't have an account? <a href="#" class="login-form__link">Register here</a></p>
   </section>
 </main>
-<footer>
-  <h2>Contacts</h2>
-  <a href="http://test_link">Telegram chat for discussions</a>
+<footer class="footer">
+  <h2 class="footer__title">Contacts</h2>
+  <a href="http://test_link" class="footer__link">Telegram chat for discussions</a>
 </footer>
 </body>
 </html>
