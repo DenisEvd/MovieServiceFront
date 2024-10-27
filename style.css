@@ -71,6 +71,10 @@ body {
 }
 
 .movies-lists__item:hover {
+    background-color: #03899C;
+}
+
+.movies-lists__item.active {
     background-color: #36BBCE;
 }
 
