@@ -162,7 +162,7 @@ li {
 .movie img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 7%;
 }
 
 .movie h4 {
