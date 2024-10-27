@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule Constructor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <ul class="nav__list">
+    <li class="nav__item"><a class="nav__link" href="main.html">Home</a></li>
+    <li class="nav__item"><a class="nav__link" href="constructor.html">Schedule Constructor</a></li>
+  </ul>
+</nav>
+<h1 class="page-title">Schedule Constructor</h1>
+<form id="schedule-form" class="form">
+  <div class="form__group">
+    <label class="form__label" for="days">Select the number of days:</label>
+    <select id="days" name="days" class="form__select">
+      <option value="5">5-day week</option>
+      <option value="6">6-day week</option>
+    </select>
+  </div>
+
+  <div class="form__group">
+    <label class="form__label" for="maxLessons">Max number of lessons per day:</label>
+    <input type="number" id="maxLessons" name="maxLessons" class="form__input" min="1" max="8" value="6">
+  </div>
+
+  <button type="submit" class="form__button">Generate Schedule</button>
+</form>
+
+<div id="schedule-container" class="schedule-container"></div>
+
+<script src="js/common.js"></script>
+</body>
+</html>
