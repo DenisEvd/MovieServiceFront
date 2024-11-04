@@ -62,12 +62,18 @@ body {
 
 .movies-lists__item {
     margin: 15px 0;
+    cursor: pointer;
     color: #FFFFFF;
     font-size: 16px;
-    cursor: pointer;
     padding: 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
+}
+
+.movies-lists__link {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 .movies-lists__item:hover {
@@ -235,6 +241,14 @@ body {
 
 .action_button:hover {
     background-color: #5FC0CE;
+}
+
+.preloader {
+    font-size: 20px;
+    color: #1F6B75;
+    text-align: center;
+    margin: 20px;
+    animation: fadeIn 1s;
 }
 
 @media (max-width: 768px) {
