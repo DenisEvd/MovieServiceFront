@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Login - Movie Service</title>
   <link rel="stylesheet" href="style.css">
-  <script src="js/common.js" defer></script>
 </head>
 <body>
 <header class="header">
@@ -31,5 +30,13 @@
   <h2 class="footer__title">Contacts</h2>
   <a href="http://test_link" class="footer__link">Telegram chat for discussions</a>
 </footer>
+<script src="node_modules/validate.js/validate.min.js"></script>
+<script src="js/auth.js"></script>
+<script type="module">
+  import validate from './node_modules/validate.js/validate.js';
+  import { validateForm } from './js/auth';
+
+  validateForm(validate);
+</script>
 </body>
 </html>

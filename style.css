@@ -251,6 +251,12 @@ body {
     animation: fadeIn 1s;
 }
 
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
 @media (max-width: 768px) {
     .main {
         flex-direction: column;

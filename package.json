@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "drift-zoom": "^1.5.1"
+    "drift-zoom": "^1.5.1",
+    "validate.js": "^0.13.1"
   }
 }
